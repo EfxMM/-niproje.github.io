@@ -1,0 +1,756 @@
+/* ==========================================
+   Responsive Design - Mobile First Approach
+   ========================================== */
+
+/* ==========================================
+   Tablet (768px - 1024px)
+   ========================================== */
+@media (max-width: 1024px) {
+    :root {
+        --spacing-xl: 32px;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .nav-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-stats {
+        gap: var(--spacing-md);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================
+   Mobile (320px - 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    :root {
+        --spacing-lg: 24px;
+        --spacing-xl: 24px;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    /* Header */
+    .header {
+        padding: 14px 0;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        gap: 6px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .btn-theme {
+        width: 40px;
+        height: 40px;
+    }
+
+    .theme-icon {
+        font-size: 1.1rem;
+    }
+
+    .btn-home {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+
+    .btn-home span:last-child {
+        display: none;
+    }
+
+    .header.scrolled {
+        padding: 12px 0;
+    }
+
+    /* Hero */
+    .hero {
+        padding: var(--spacing-md) 0;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    /* Navigation Cards */
+    .nav-cards {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .nav-card {
+        padding: var(--spacing-md);
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+    }
+
+    /* Quick Stats */
+    .quick-stats {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* Tabs */
+    .tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tab-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.875rem;
+    }
+
+    /* Info Grid */
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Quiz */
+    .quiz-start {
+        padding: var(--spacing-md);
+    }
+
+    .quiz-header {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        text-align: center;
+    }
+
+    .question-card {
+        padding: var(--spacing-md);
+    }
+
+    .question-text {
+        font-size: 1.125rem;
+    }
+
+    .option-btn {
+        padding: var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+
+    /* Quiz Results */
+    .quiz-results {
+        padding: var(--spacing-md);
+    }
+
+    .results-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .results-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .results-actions .btn {
+        width: 100%;
+    }
+
+    /* Scenarios */
+    .scenario-selection {
+        grid-template-columns: 1fr;
+    }
+
+    .scenario-content {
+        padding: var(--spacing-md);
+    }
+
+    .scenario-situation {
+        font-size: 1rem;
+    }
+
+    .choice-btn {
+        padding: var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+
+    /* Progress */
+    .badges-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .badge {
+        padding: var(--spacing-xs);
+    }
+
+    .badge-icon {
+        font-size: 2rem;
+    }
+
+    .badge-name {
+        font-size: 0.75rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--spacing-md) 0 var(--spacing-sm);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-large {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 1rem;
+    }
+
+    /* El Yıkama Bölümü */
+    .handwash-step-card {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-md);
+    }
+
+    .handwash-step-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .step-number-badge {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .step-number {
+        font-size: 1.5rem;
+    }
+
+    .tip-card-primary {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tip-icon {
+        font-size: 2.5rem;
+    }
+
+    .when-to-wash-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wash-item {
+        text-align: center;
+    }
+}
+
+/* ==========================================
+   Small Mobile (320px - 480px)
+   ========================================== */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1.125rem;
+    }
+
+    .card-description {
+        font-size: 0.85rem;
+    }
+
+    .stat-number {
+        font-size: 1.75rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    .question-text {
+        font-size: 1rem;
+    }
+
+    .badges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================
+   Landscape Mobile
+   ========================================== */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .main-content {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .nav-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-stats {
+        flex-direction: row;
+    }
+}
+
+/* ==========================================
+   Large Desktop (1440px+)
+   ========================================== */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-description {
+        font-size: 1.25rem;
+    }
+
+    .nav-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ==========================================
+   Print Styles
+   ========================================== */
+@media print {
+    .header,
+    .footer,
+    .btn,
+    .nav-cards {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .page {
+        display: block !important;
+    }
+
+    .info-card,
+    .question-card {
+        page-break-inside: avoid;
+    }
+}
+
+/* ==========================================
+   Accessibility - Reduced Motion
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ==========================================
+   Dark Mode Support (Optional)
+   ========================================== */
+@media (prefers-color-scheme: dark) {
+    /* Uncomment to enable dark mode
+    :root {
+        --color-bg: #1e293b;
+        --color-bg-card: #334155;
+        --color-text: #f1f5f9;
+        --color-text-light: #cbd5e1;
+        --color-border: #475569;
+    }
+    */
+}
+
+/* ==========================================
+   Touch Device Optimizations
+   ========================================== */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets for mobile */
+    .btn,
+    .option-btn,
+    .choice-btn,
+    .tab-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Remove hover effects on touch devices */
+    .nav-card:hover,
+    .option-btn:hover,
+    .choice-btn:hover {
+        transform: none;
+    }
+
+    /* Add active states instead */
+    .nav-card:active {
+        transform: scale(0.98);
+    }
+
+    .btn:active,
+    .option-btn:active,
+    .choice-btn:active {
+        transform: scale(0.95);
+    }
+}
+
+
+/* ==========================================
+   YENİ ANA SAYFA - RESPONSIVE TASARIM
+   ========================================== */
+
+/* Tablet ve Küçük Ekranlar */
+@media (max-width: 1024px) {
+    .hero-modern {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        padding: 3rem 0 2rem;
+    }
+
+    .hero-main-title {
+        font-size: 3rem;
+    }
+
+    .hero-visual-modern {
+        height: 400px;
+    }
+
+    .floating-card {
+        padding: 1.5rem;
+    }
+
+    .floating-card.card-1,
+    .floating-card.card-2,
+    .floating-card.card-3 {
+        width: 240px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-modern {
+        padding: 2.5rem 0 2rem;
+        margin-bottom: 4rem;
+        gap: 3rem;
+    }
+
+    .hero-main-title {
+        font-size: 2.25rem;
+        letter-spacing: -0.75px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        gap: 0.875rem;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 1.75rem;
+    }
+
+    .hero-stats-modern {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1.25rem 1.5rem;
+        width: 100%;
+    }
+
+    .stat-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .stat-item-modern {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-visual-modern {
+        height: 350px;
+    }
+
+    .floating-card {
+        padding: 1.25rem;
+    }
+
+    .floating-card.card-1,
+    .floating-card.card-2,
+    .floating-card.card-3 {
+        width: 200px;
+    }
+
+    .card-icon-modern {
+        font-size: 2.25rem;
+    }
+
+    .card-content-modern h4 {
+        font-size: 1.0625rem;
+    }
+
+    .card-content-modern p {
+        font-size: 0.875rem;
+    }
+
+    .features-section {
+        margin-bottom: 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .feature-icon-wrapper {
+        width: 64px;
+        height: 64px;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .feature-title {
+        font-size: 1.25rem;
+    }
+
+    .feature-description {
+        font-size: 0.9375rem;
+    }
+
+    .feature-list li {
+        font-size: 0.875rem;
+    }
+
+    .why-section {
+        padding: 2.5rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .why-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .why-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+
+    .why-text strong {
+        font-size: 1rem;
+    }
+
+    .why-text p {
+        font-size: 0.9375rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero-main-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-label {
+        font-size: 0.8125rem;
+        padding: 0.375rem 0.875rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9375rem;
+    }
+
+    .stat-badge strong {
+        font-size: 1.5rem;
+    }
+
+    .stat-badge span {
+        font-size: 0.8125rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-description {
+        font-size: 0.9375rem;
+    }
+
+    .feature-card {
+        padding: 1.25rem;
+    }
+
+    .feature-icon-wrapper {
+        width: 56px;
+        height: 56px;
+    }
+
+    .feature-icon {
+        font-size: 1.75rem;
+    }
+
+    .feature-title {
+        font-size: 1.125rem;
+    }
+
+    .why-title {
+        font-size: 1.75rem;
+    }
+
+    .why-section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-modern {
+        padding: 1.5rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .hero-main-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .features-section {
+        margin-bottom: 2rem;
+    }
+
+    .why-section {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+    .hero-modern {
+        gap: 5rem;
+        padding: 5rem 0 4rem;
+    }
+
+    .hero-main-title {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .why-section {
+        padding: 5rem 3rem;
+    }
+}
